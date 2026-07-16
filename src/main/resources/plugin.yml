@@ -1,0 +1,55 @@
+name: EvolutionHoe
+version: 1.0.0
+main: fr.wazenpotofeu.evolutionhoe.EvolutionHoe
+description: Plugin premium de farming avancé
+authors:
+  - wazenpotofeu
+
+api-version: 1.20
+
+commands:
+  hoe:
+    description: Commande principale d'EvolutionHoe
+    aliases: [evolutionhoe, ehoe]
+    permission: evolutionhoe.command.hoe
+  ehoe-admin:
+    description: Commandes administrateur
+    permission: evolutionhoe.admin
+  ehoe-stats:
+    description: Voir ses statistiques
+    permission: evolutionhoe.command.stats
+  ehoe-prestige:
+    description: Voir les prestiges
+    permission: evolutionhoe.command.prestige
+  ehoe-leaderboard:
+    description: Voir le classement
+    permission: evolutionhoe.command.leaderboard
+  ehoe-dna:
+    description: Gérer l'ADN de la houe
+    permission: evolutionhoe.command.dna
+  ehoe-fusion:
+    description: Fusionner deux houes
+    permission: evolutionhoe.command.fusion
+  ehoe-gems:
+    description: Gérer les gemmes
+    permission: evolutionhoe.command.gems
+
+permissions:
+  evolutionhoe.*:
+    description: Accès complet au plugin
+    children:
+      evolutionhoe.command.*: true
+      evolutionhoe.admin: true
+  evolutionhoe.command.*:
+    description: Tous les commandes
+    children:
+      evolutionhoe.command.hoe: true
+      evolutionhoe.command.stats: true
+      evolutionhoe.command.prestige: true
+      evolutionhoe.command.leaderboard: true
+      evolutionhoe.command.dna: true
+      evolutionhoe.command.fusion: true
+      evolutionhoe.command.gems: true
+  evolutionhoe.admin:
+    description: Accès admin
+    default: op

@@ -1,0 +1,70 @@
+# Messages - EvolutionHoe
+
+# Préfixe
+prefix: "&6&lEvolution&e&lHoe &7▸ &r"
+
+# Messages d'erreur
+errors:
+  no-permission: "&cVous n'avez pas la permission."
+  player-not-found: "&cJoueur non trouvé."
+  not-holding-hoe: "&cVous ne tenez pas une houe."
+  invalid-arguments: "&cArguments invalides."
+  command-error: "&cErreur lors de l'exécution de la commande."
+
+# Messages d'info
+info:
+  reload-success: "&aLe plugin a été rechargé avec succès."
+  feature-disabled: "&cCette fonctionnalité est désactivée."
+  cooldown: "&cVeuillez attendre &f{TIME}s &cavant de réessayer."
+
+# Statistiques
+stats:
+  title: "&6╔═══════════════════════╗"
+  player: "&e{PLAYER}"
+  level: "&eNiveau: &f{LEVEL}"
+  xp: "&eXP: &f{XP}/{MAX_XP}"
+  prestige: "&ePrestige: &f{PRESTIGE}"
+  fortune: "&eFortune: &f{FORTUNE}%"
+  total-harvested: "&eRécoltes: &f{HARVESTED}"
+  total-earned: "&eGagné: &f${EARNED}"
+  footer: "&6╚═══════════════════════╝"
+
+# Éveil
+awakening:
+  start: "&5✨ &dVotre houe commence à briller intensément..."
+  complete: "&5✨ &dVotre houe s'est &6&léveillée&d !"
+  new-name: "&6► &dNouv nom: &f{NAME}"
+  new-skin: "&6► &dNouv design: &f{SKIN}"
+  new-effects: "&6► &dNouv effects: &f{EFFECTS}"
+
+# Fusion
+fusion:
+  start: "&5⚔ &dFusion en cours..."
+  complete: "&5⚔ &dFusion réussie!"
+  winner: "&dLa houe &f{WINNER} &da conservé les améliorations."
+
+# ADN
+dna:
+  view: "&6ADN: &f{DNA}"
+  mutation-gained: "&5✨ &dVotre houe a muté en &f{MUTATION}&d!"
+  mutation-bonus: "&6► &d{BONUS}"
+
+# Gemmes
+gems:
+  inserted: "&5💎 &dGemme &f{GEM} &dinsérée avec succès!"
+  bonus: "&6► &f+{BONUS}% {TYPE}"
+
+# Prestige
+prestige:
+  progress: "&eProgress: &f{CURRENT}&e/&f{MAX}"
+  available: "&aVous pouvez faire un prestige!"
+  completed: "&6Prestige &f{PRESTIGE} &réussi!"
+
+# Actions
+actions:
+  harvested: "&a✓ &f{AMOUNT} &ablocs récoltés"
+  earned: "&a✓ &f${AMOUNT} &agagnés"
+  xp-gained: "&a✓ &f+{XP} XP &a(x{MULTIPLIER})"
+  lucky-harvest: "&6⭐ &eChance! &f+{BONUS}% loot"
+  critical-harvest: "&6💥 &eCritique! &f{MULTIPLIER}x dégâts"
+  jackpot: "&6🎲 &eJACKPOT! &f${AMOUNT}"

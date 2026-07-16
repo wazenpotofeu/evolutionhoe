@@ -1,0 +1,106 @@
+# Système d'upgrades - EvolutionHoe
+
+upgrades:
+  # Récolte
+  harvest_3x3:
+    display-name: "Récolte 3x3"
+    description: "Récolte 9 blocs à la fois"
+    cost: 100
+    level-requirement: 10
+  
+  harvest_5x5:
+    display-name: "Récolte 5x5"
+    description: "Récolte 25 blocs à la fois"
+    cost: 500
+    level-requirement: 25
+  
+  harvest_circular:
+    display-name: "Récolte Circulaire"
+    description: "Récolte en motif circulaire"
+    cost: 750
+    level-requirement: 40
+  
+  double_harvest:
+    display-name: "Double Récolte"
+    description: "Chance de récolter 2x"
+    cost: 1000
+    level-requirement: 50
+    stats:
+      chance: 10.0
+  
+  triple_harvest:
+    display-name: "Triple Récolte"
+    description: "Chance de récolter 3x"
+    cost: 2000
+    level-requirement: 75
+    stats:
+      chance: 5.0
+  
+  # Économie
+  sell_all:
+    display-name: "Vente Rapide"
+    description: "Vendre tous vos items d'un coup"
+    cost: 150
+    level-requirement: 15
+  
+  auto_sell:
+    display-name: "Vente Automatique"
+    description: "Vendre automatiquement"
+    cost: 500
+    level-requirement: 30
+  
+  fortune_boost:
+    display-name: "Boost Fortune"
+    description: "+5% Fortune par upgrade"
+    cost: 200
+    level-requirement: 20
+    max-level: 20
+    stats:
+      fortune: 5.0
+  
+  sell_multiplier:
+    display-name: "Multiplicateur de Vente"
+    description: "+2% multiplicateur par upgrade"
+    cost: 250
+    level-requirement: 25
+    max-level: 50
+    stats:
+      sell-multiplier: 2.0
+  
+  # Utilitaires
+  auto_repair:
+    display-name: "Réparation Auto"
+    description: "La houe se répare automatiquement"
+    cost: 300
+    level-requirement: 20
+  
+  magnet:
+    display-name: "Aimant"
+    description: "Attire les items automatiquement"
+    cost: 400
+    level-requirement: 35
+  
+  haste_boost:
+    display-name: "Boost Hâte"
+    description: "Augmente la vitesse de mining"
+    cost: 350
+    level-requirement: 30
+  
+  # Loot
+  loot_keys:
+    display-name: "Générateur de Clés"
+    description: "Génère des clés en farming"
+    cost: 500
+    level-requirement: 40
+  
+  loot_tokens:
+    display-name: "Générateur de Tokens"
+    description: "Génère des tokens en farming"
+    cost: 600
+    level-requirement: 50
+  
+  loot_crystals:
+    display-name: "Générateur de Cristaux"
+    description: "Génère des cristaux rares"
+    cost: 800
+    level-requirement: 60

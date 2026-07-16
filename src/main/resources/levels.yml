@@ -1,0 +1,64 @@
+# Configuration des niveaux
+
+levels:
+  max-level: 1000
+  prestige-enabled: true
+  prestige-max: 100
+  
+  # XP requis par niveau (formule par défaut: level * 100)
+  xp-formula: "level * 100"
+  
+  # Bonus par niveau
+  per-level:
+    fortune: 0.5  # % par niveau
+    sell-multiplier: 0.02  # multiplicateur par niveau
+    xp-gain: 0.01  # % bonus XP par niveau
+    harvest-size: 0.01  # augmentation rayon récolte
+  
+  # Milestones spéciaux
+  milestones:
+    10:
+      description: "10ème niveau atteint"
+      reward: 50
+      type: "tokens"
+    25:
+      description: "25ème niveau atteint"
+      reward: 100
+      type: "tokens"
+    50:
+      description: "50ème niveau atteint"
+      reward: 250
+      type: "crystals"
+    100:
+      description: "100ème niveau - Éveil"
+      reward: 500
+      type: "essence"
+      special-event: true
+    500:
+      description: "500ème niveau - Légende"
+      reward: 5000
+      type: "essence"
+      special-event: true
+    1000:
+      description: "1000ème niveau - Ascension"
+      reward: 10000
+      type: "essence"
+      special-event: true
+
+prestige:
+  # XP requis pour un prestige (formule par défaut: prestige * 10000)
+  xp-formula: "prestige * 10000"
+  
+  # Bonus par prestige
+  per-prestige:
+    base-multiplier: 0.1  # +10% multiplicateur
+    color-unlock: true
+    title-unlock: true
+  
+  # Réinitialisation lors du prestige
+  reset:
+    level: true
+    xp: true
+    keep-upgrades: true
+    keep-dna: true
+    keep-gems: true

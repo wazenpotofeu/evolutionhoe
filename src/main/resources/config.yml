@@ -1,0 +1,182 @@
+# EvolutionHoe - Configuration Générale
+
+# Base de données
+database:
+  type: sqlite  # sqlite ou mysql
+  sqlite:
+    file: plugins/EvolutionHoe/data.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: evolutionhoe
+    username: root
+    password: password
+    ssl: false
+
+# Farming
+farming:
+  # XP
+  xp:
+    per-block: 1.0
+    multiplier: 1.0
+    
+  # Fortune
+  fortune:
+    per-level: 0.5
+    max: 100.0
+    
+  # Auto replant
+  auto-replant:
+    enabled: true
+    consume-seeds: true
+    
+  # Récolte
+  harvest:
+    size-3x3: true
+    size-5x5: true
+    size-circular: true
+    double-harvest: true
+    triple-harvest: true
+
+# Économie
+economy:
+  # Sell All
+  sell-all:
+    enabled: true
+    cooldown: 5  # secondes
+    
+  # Auto Sell
+  auto-sell:
+    enabled: true
+    interval: 60  # secondes
+    
+  # Multiplicateur
+  multiplier:
+    per-level: 0.02
+    max: 10.0
+    
+  # Bonus de vente
+  bonus:
+    jackpot-chance: 5.0  # %
+    jackpot-multiplier: 2.5
+
+# Loot
+loot:
+  keys:
+    enabled: true
+    chance: 2.0  # %
+  tokens:
+    enabled: true
+    chance: 1.5  # %
+  crystals:
+    enabled: true
+    chance: 1.0  # %
+  essence:
+    enabled: true
+    chance: 0.5  # %
+  fragments:
+    enabled: true
+    chance: 0.3  # %
+
+# Chance
+chance:
+  lucky-harvest:
+    enabled: true
+    chance: 10.0  # %
+    multiplier: 1.5
+  critical-harvest:
+    enabled: true
+    chance: 5.0  # %
+    multiplier: 2.0
+  double-xp:
+    enabled: true
+    chance: 3.0  # %
+
+# Utilitaires
+utilities:
+  auto-repair:
+    enabled: true
+    restore-per-block: 1  # points de durabilité
+  infinite-durability:
+    enabled: false
+  magnet:
+    enabled: true
+    radius: 16  # blocks
+  haste:
+    enabled: true
+    level: 1
+
+# Cosmétiques
+cosmetics:
+  skins:
+    enabled: true
+    default: "hoe_base"
+  particles:
+    enabled: true
+    default: "default_effect"
+  sounds:
+    enabled: true
+    volume: 1.0
+    pitch: 1.0
+
+# ADN & Mutations
+dna:
+  enabled: true
+  format: "XXXX-XXXX-XXXX"  # Format de l'ADN
+  mutations:
+    enabled: true
+    chance: 0.1  # % par niveau
+    types:
+      radiance:
+        fortune: 15.0
+        xp: 10.0
+      vitality:
+        auto-repair: 50.0
+        durability: 25.0
+      wealth:
+        sell-multiplier: 25.0
+        tokens: 15.0
+
+# Traits
+traits:
+  enabled: true
+  chance: 100.0  # % d'avoir un trait
+  types:
+    lucky:
+      keys: 5.0
+    wealth:
+      sell: 8.0
+    efficiency:
+      speed: 10.0
+
+# Gemmes
+gems:
+  enabled: true
+  ruby:
+    fortune: 5.0
+    xp: 2.0
+  sapphire:
+    tokens: 3.0
+    keys: 2.0
+  emerald:
+    sell-multiplier: 10.0
+  obsidian:
+    special: 5.0
+
+# Niveaux
+levels:
+  enabled: true
+  max: 1000
+  prestige-enabled: true
+  prestige-max: 100
+
+# Interface
+gui:
+  enabled: true
+  animation-enabled: true
+  update-interval: 20  # ticks
+
+# Logs
+logs:
+  enabled: true
+  level: INFO  # DEBUG, INFO, WARNING, ERROR
