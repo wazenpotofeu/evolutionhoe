@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface IGemAPI {
     
     /**
-     * Insére une gemme dans une houe
+     * Insère une gemme dans une houe
      */
     boolean insertGem(HoeModel hoe, String gemType, int slot);
     
